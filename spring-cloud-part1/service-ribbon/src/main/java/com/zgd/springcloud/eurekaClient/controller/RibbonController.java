@@ -18,8 +18,8 @@ public class RibbonController {
      * @param name
      * @return
      */
-    @GetMapping(value = "/getHi")
-    public String getHi(@RequestParam String name) {
+    @GetMapping(value = "/getHello")
+    public String getHello(@RequestParam String name) {
         return helloService.hiService( name );
     }
 

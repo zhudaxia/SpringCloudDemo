@@ -10,6 +10,7 @@ import org.springframework.web.bind.annotation.RestController;
  * @author zgd
  */
 @RestController
+@RequestMapping("/client2")
 public class ProducerController {
 
     @Value("${server.port}")

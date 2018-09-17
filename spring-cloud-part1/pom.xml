@@ -15,10 +15,10 @@
         <module>eureka-client-01</module>
         <module>eureka-client-02</module>
         <module>service-ribbon</module>
-        <module>service-feifn</module>
+        <module>service-feign</module>
     </modules>
 
-    <name>cloud-demo</name>
+    <name>spring-cloud-part1</name>
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
