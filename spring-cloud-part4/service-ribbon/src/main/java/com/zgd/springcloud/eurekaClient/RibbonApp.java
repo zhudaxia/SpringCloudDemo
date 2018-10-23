@@ -7,14 +7,15 @@ import org.springframework.cloud.client.loadbalancer.LoadBalanced;
 import org.springframework.cloud.netflix.eureka.EnableEurekaClient;
 import org.springframework.cloud.netflix.hystrix.EnableHystrix;
 import org.springframework.context.annotation.Bean;
+import org.springframework.scheduling.annotation.EnableAsync;
 import org.springframework.web.client.RestTemplate;
-
 
 /**
  * eureka client 客户端
  */
 @EnableDiscoveryClient
 @EnableEurekaClient
+@EnableAsync
 //开启hystrix熔断
 @EnableHystrix
 @SpringBootApplication

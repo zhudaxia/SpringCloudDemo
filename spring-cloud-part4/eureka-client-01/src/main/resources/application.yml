@@ -1,5 +1,5 @@
 server:
-    port: 8083
+    port: 8088
 
 eureka:
     #当前eureka是客户端,所以只需要配置服务注册的地址
