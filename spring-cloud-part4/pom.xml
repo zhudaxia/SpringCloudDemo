@@ -12,12 +12,14 @@
     <name>spring-cloud-part4</name>
 
     <modules>
-        <module>eureka-client-01</module>
+        <module>service-client</module>
+        <module>service-client-config</module>
         <module>eureka-server</module>
-        <module>service-config</module>
+        <module>eureka-server-config</module>
         <module>service-feign</module>
         <module>service-ribbon</module>
         <module>service-zuul</module>
+        <module>service-server-config</module>
     </modules>
 
     <parent>
@@ -59,6 +61,13 @@
             <version>5.1.1.RELEASE</version>
             <scope>test</scope>
         </dependency>
+
+        <dependency>
+            <groupId>org.apache.commons</groupId>
+            <artifactId>commons-lang3</artifactId>
+            <version>3.7</version>
+        </dependency>
+
     </dependencies>
 
     <dependencyManagement>
@@ -66,6 +75,7 @@
             <dependency>
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-starter-test</artifactId>
+                <version>2.0.4.RELEASE</version>
                 <scope>test</scope>
             </dependency>
             <dependency>

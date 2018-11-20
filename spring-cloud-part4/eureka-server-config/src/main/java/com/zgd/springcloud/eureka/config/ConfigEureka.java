@@ -1,20 +1,19 @@
-package com.zgd.springcloud.eurekaServer;
+package com.zgd.springcloud.eureka.config;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.cloud.netflix.eureka.server.EnableEurekaServer;
 
-/**
- * eureka server 服务器
- * @author zgd
- */
 
-@EnableEurekaServer
+/**
+ * eureka client 客户端
+ */
 @SpringBootApplication
-public class ServerApp {
+@EnableEurekaServer
+public class ConfigEureka {
 
     public static void main(String[] args) {
-        System.out.println("启动EurekaServer服务");
-        SpringApplication.run(ServerApp.class);
+        SpringApplication.run(ConfigEureka.class, args);
     }
+
 }
